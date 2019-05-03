@@ -13,6 +13,10 @@
     --cta-border-radius:6px;
 }
 
+html{
+    background:var(--secondary-color);
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
