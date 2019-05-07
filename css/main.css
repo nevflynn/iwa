@@ -548,4 +548,9 @@ h5{
         white-space: nowrap;
     }
 
+    .option-image{
+        height:50%;
+        width:50%;
+    }
+
 }
