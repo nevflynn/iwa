@@ -561,4 +561,24 @@ h5{
         margin-right:-15px;
     }
 
+    /* Bottom cta section */
+    .home-bottom-cta{
+        padding:80px 50px;
+        text-align: center;
+    }
+
+    .home-bottom-cta h1{
+        font-size:var(--font-size-large);
+    }
+
+    /* Footer */
+    .footer{
+        flex-direction:column;
+        padding:10px;
+    }
+
+    .footer--right{
+        margin:20px 0;
+    }
+
 }
