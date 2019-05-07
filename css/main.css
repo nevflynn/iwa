@@ -469,6 +469,7 @@ h5{
 
 @media screen and (max-width:1000px){
     /* Landing Page Mobile Optimisation */
+    /* Hero section */
     .header__link{
         display:none;
     }
@@ -481,7 +482,7 @@ h5{
 
     .hero__image-container{
         order:1;
-        padding:20px 0;
+        padding-bottom:20px;
     }
 
     .hero__image{
@@ -496,5 +497,55 @@ h5{
         order:2;
     }
 
+    /* Home about section */
+    .intro{
+        padding:20% 0;
+    }
+
+    .intro__inner{
+        width:85vw;
+    }
+
+    .whiskey-still{
+        width:70%;
+    }
+
+    /* Calculator section */
+    .calculator-container{
+        padding:12% 8%;
+        box-sizing:border-box;
+    }
+
+    .slider-container{
+        grid-template-columns: 70% auto;
+    }
+
+    .selling-options{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-gap:10px;
+    }
+
+    .selling-option-info{
+        grid-template-columns: 1fr;
+    }
+
+    .selling-option-image{
+        padding:40px 0;
+    }
+
+    .selling-option-text{
+        text-align: center;
+    }
+
+    .result{
+        width:auto;
+        white-space: nowrap;
+    }
+
+    .result-final{
+        width:auto !important;
+        white-space: nowrap;
+    }
 
 }
