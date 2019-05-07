@@ -280,7 +280,7 @@ h5{
 
 .slider-container {
     display: grid;
-    grid-template-columns: 85% auto;
+    grid-template-columns: 80% auto;
     box-sizing: border-box;
 }
 
@@ -466,7 +466,6 @@ h5{
     margin:0 8px;
 }
 
-
 @media screen and (max-width:1000px){
     /* Landing Page Mobile Optimisation */
     /* Hero section */
@@ -551,6 +550,15 @@ h5{
     .option-image{
         height:50%;
         width:50%;
+    }
+
+    .bottle-1{
+        width:20%;
+    }
+
+    .bottle-2{
+        width:26%;
+        margin-right:-15px;
     }
 
 }
