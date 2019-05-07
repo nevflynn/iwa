@@ -476,18 +476,25 @@ h5{
     .hero{
         grid-template-columns:1fr;
         height:auto;
-        padding:50px 20px;
+        padding:30px 20px;
     }
 
     .hero__image-container{
         order:1;
+        padding:20px 0;
+    }
+
+    .hero__image{
+        margin:0 auto; 
+    }
+
+    .hero__cta--wrapper{
+        margin-bottom:0;
     }
 
     .hero__cta{
         order:2;
     }
 
-    .hero__image{
-        margin-bottom:0; 
-    }
+
 }
