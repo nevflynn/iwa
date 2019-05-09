@@ -317,7 +317,6 @@ h5{
     grid-gap: 2%;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    padding-bottom: 5%;
 }
 
 .selling-options-heading{
@@ -362,6 +361,29 @@ h5{
     margin-bottom: 10px;
     padding: 0;
 }
+
+.bundle-container{
+    display:grid;
+    grid-gap:2%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    font-weight:300;
+}
+
+.bundle-option{
+    padding: 14%;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    transition: .2s ease;
+    font-size:10pt;
+    cursor:pointer;
+}
+
+.bundle-option:hover{
+    transition: .2s ease;
+    filter:brightness(1.1);
+}
+
 
 .slider-container {
     display: grid;
@@ -414,19 +436,33 @@ h5{
     transition:.1s ease;
 }
 
+.result-container-bundle{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:3%;
+}
+
 .result-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 3%;
 }
+
+.result-container h5{
+    margin-right:20px;
+}
+
+.result-container.top{
+    padding-top:3%;
+}
+
 
 .result {
     padding: 3%;
     font-family: 'Lato';
     font-weight: lighter;
-    margin-left: 20px;
     border-radius: 6px;
     background: var(--secondary-color);
     width: 12%;
@@ -460,6 +496,7 @@ h5{
     border: 1px #353535 solid;
     border-radius: 10px;
     padding: 8% 5%;
+    margin:5% 0;
 }
 
 .active {
@@ -655,6 +692,16 @@ h5{
     .bottle-2{
         width:26%;
         margin-right:-15px;
+    }
+
+    .bundle-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap:12px;
+    }
+
+    .bundle-option{
+        padding:8%;
     }
 
     /* Bottom cta section */

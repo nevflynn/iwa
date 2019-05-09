@@ -81,25 +81,28 @@
 	<!-- Calculator section -->
 
 	<div class="calculator-container">
-		<h2>Calculate estimated returns</h2>
+		<h2>Calculate potential gross returns</h2>
 	
 		<div class="slider-section">
-		    <h5 class="slider-heading">Number of casks invested:</h5>
-		    <div class="slider-container">
-			<input type="range" min="0" max="50" value="0" class="slider" id="slider-1" oninput="setResults()">
-			<div class="range-indicator" id="caskNumber">0 casks</div>
-		    </div>
-		    <div class="result-container">
-			<h5>Total investment cost:</h5>
-			<div class="result" id="result-1">€0</div>
-		    </div>
+		    <h5 class="slider-heading">Select a bundle</h5>
+		    <div class="bundle-container" onclick="selectBundle(event)">
+				<div class="bundle-option" id="bundle-1">Bronze</div>
+				<div class="bundle-option" id="bundle-2">Silver</div>
+				<div class="bundle-option" id="bundle-3">Gold</div>
+				<div class="bundle-option" id="bundle-4">Diamond</div>
+				<div class="bundle-option" id="bundle-5">Platinum</div>
+			</div>
+			<div class="result-container top">
+				<h5 id="casks-title">Investment cost for 0 casks:</h5>
+				<div class="result" id="result-1">€0</div>
+			</div>
 		</div>
 	
 		<div class="slider-section">
-		    <h5 class="slider-heading">Cask ageing duration:</h5>
+		    <h5 class="slider-heading"> How long do you plan to allow your casks to mature?</h5>
 		    <div class="slider-container">
-			<input type="range" min="1" max="100" value="0" class="slider" id="slider-2" oninput="setResults()">
-			<div class="range-indicator" id="yearNumber">0 years</div>
+				<input type="range" min="1" max="20" value="0" class="slider" id="slider-2" oninput="setResults()">
+				<div class="range-indicator" id="yearNumber">0 years</div>
 		    </div>
 		</div>
 
@@ -153,7 +156,7 @@
 	
 		</div>
 		<div class="result-container">
-			<h5>Estimated net return on investment:</h5>
+			<h5>Estimated gross return on investment:</h5>
 			<div class="result result-final" id="result-2">€0</div>
 		    </div>
 	
