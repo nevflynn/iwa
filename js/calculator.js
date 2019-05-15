@@ -117,7 +117,10 @@ function setResults() {
 
     var grossReturn = investment*rate*years/100;
     output2.innerHTML = years + ' years';
-    result2.innerHTML = '€' + grossReturn.toFixed(0);
+
+    let grossReturnLower = .9*grossReturn;
+    let grossReturnUpper = 1.1*grossReturn;
+    result2.innerHTML = '€' + grossReturnLower.toFixed(0) + ' - €' + grossReturnUpper.toFixed(0);
 
 }
 
