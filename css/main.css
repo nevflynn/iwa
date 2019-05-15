@@ -885,3 +885,28 @@ h5{
 #carousel-image-9{
     width:70px;
 }
+
+@media screen and (max-width:1000px){
+    .process-hero{
+        padding:12% 8%;
+    }
+
+    .process-body{
+        padding:15% 2% 25% 2%;
+    }
+
+    .carousel-container{
+        padding:0 35px;
+    }
+    
+    .carousel-tile{
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+    }
+
+    .carousel-tile img{
+        margin:0 0 10px 0;
+    }
+}
+
