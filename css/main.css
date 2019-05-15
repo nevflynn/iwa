@@ -725,3 +725,163 @@ h5{
     }
 
 }
+
+
+/* How it works page styling */
+
+.process-hero{
+    background:var(--primary-color);
+    margin-top:100px;
+    padding: 10% 25%;
+    text-align: center;
+}
+
+.process-hero h1{
+    margin: 20px 0 30px 0;
+}
+
+.brands-wrapper-mobile img{
+    width:40px;
+}
+
+
+.process-body{
+    padding:8% 25% 12% 25%;
+}
+
+.carousel-container{
+    padding:0 50px;
+    box-sizing:border-box;
+    position: relative;
+    display:block;
+}
+
+.carousel-container button{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none; 
+    transition:.2s ease;
+}
+
+.carousel-container button:hover{
+    opacity:.7;
+    transition:.2s ease;
+}
+
+.slick-prev{
+    left:0;
+    background: url(/img/left-arrow.svg);
+}
+
+.slick-next{
+    right:0;
+    background: url(/img/right-arrow.svg);
+}
+.slick-dots{
+    position: absolute;
+    display: block;
+    padding: 0;
+    left:0;
+    width:100%;
+    list-style: none;
+    text-align: center;
+    box-sizing:border-box;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+    box-sizing:border-box;
+
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: var(--primary-color);
+    opacity:.2;
+    box-sizing:border-box;
+    border-radius:15px;
+    transition:.2s ease;
+}
+
+.slick-dots li.slick-active button{
+    opacity:1;
+    transition:.2s ease;
+}
+
+.slick-initialized .slick-slide{
+    display:flex;
+}
+
+.carousel-tile{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    border:1px #353535 solid;
+    margin:10px;
+    box-sizing:border-box;
+    padding:70px;
+    border-radius:10px;
+}
+
+.carousel-tile:focus{
+    outline:none;
+}
+
+.carousel-tile h2{
+    color:var(--primary-color);
+    font-weight:300;
+    margin:0 0 5px 0;
+}
+
+.carousel-tile p{
+    color:var(--primary-color);
+    margin:0 !important;
+}
+
+.carousel-tile img{
+    width:150px;
+    margin-right:50px;
+}
+
+#carousel-image-4{
+    width:120px;
+}
+
+#carousel-image-5{
+    width:90px;
+}
+
+#carousel-image-8{
+    width:50px;
+}
+
+#carousel-image-9{
+    width:70px;
+}
